@@ -33,7 +33,7 @@ python src/app.py
 Method  	Endpoint	              Description	            Auth Required
 POST	    /api/auth/register	    Register new user	      No
 POST	    /api/auth/login	        Login + get token	      No
-GET	      /api/tasks	            Get all user tasks	    Yes
+GET	        /api/tasks	            Get all user tasks	      Yes
 POST	    /api/tasks	            Create a task	          Yes
-PUT	      /api/tasks/<id>	        Update a task	          Yes
-DELETE	  /api/tasks/<id>	        Delete a task	          Yes
+PUT	        /api/tasks/<id>	        Update a task	          Yes
+DELETE	    /api/tasks/<id>	        Delete a task	          Yes
