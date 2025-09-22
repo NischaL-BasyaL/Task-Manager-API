@@ -29,12 +29,17 @@ cd task-manager-api
 pip install -r requirements.txt
 python src/app.py
 
-## API Endpoints
+<details>
+  <summary>API Endpoints</summary>
 
-POST    /api/auth/register    → Register new user (No Auth)
-POST    /api/auth/login       → Login + get token (No Auth)
-GET     /api/tasks            → Get all tasks (Auth Required)
-POST    /api/tasks            → Create a task (Auth Required)
-GET     /api/tasks/<id>       → Get task by ID (Auth Required)
-PUT     /api/tasks/<id>       → Update a task (Auth Required)
-DELETE  /api/tasks/<id>       → Delete a task (Auth Required)
+| Method | Endpoint             | Description          | Auth Required |
+|--------|----------------------|----------------------|---------------|
+| POST   | `/api/auth/register` | Register new user    | No            |
+| POST   | `/api/auth/login`    | Login + get token    | No            |
+| GET    | `/api/tasks`         | Get all tasks        | Yes           |
+| POST   | `/api/tasks`         | Create a task        | Yes           |
+| GET    | `/api/tasks/<id>`    | Get task by ID       | Yes           |
+| PUT    | `/api/tasks/<id>`    | Update a task        | Yes           |
+| DELETE | `/api/tasks/<id>`    | Delete a task        | Yes           |
+
+</details>
